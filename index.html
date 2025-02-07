@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-card">
+        <img src="your-profile-image.jpg" alt="Profile Picture" data-testid="profilePicture">
+        <h1 data-testid="fullName">Grace Olumuyiwa</h1>
+        <h2 data-testid="jobTitle">Frontend & WordPress Developer</h2>
+        <p data-testid="shortBio">
+            A passionate frontend developer with expertise in JavaScript, React.js, and WordPress.  
+            I love building interactive and user-friendly web applications.
+        </p>
+        <p data-testid="currentLocation">Ibadan, Nigeria</p>
+        <p data-testid="emailAddress">gracogenolu30@gmail.com</p>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://github.com/your-github" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
+        </div>
+        <p data-testid="currentTimeUTC" id="utc-time">Loading...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
