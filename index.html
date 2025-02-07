@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="profile-card">
-        <img src="your-profile-image.jpg" alt="Profile Picture" data-testid="profilePicture">
+  <div class="profile-card">
+    <!-- Left Column -->
+    <div class="profile-left">
+      <div class="profile-picture" data-testid="profilePicture">
+        <img src="./assets/bdgre.jpg" alt="Profile Picture">
+      </div>
+      <div class="profile-name">
         <h1 data-testid="fullName">Grace Olumuyiwa</h1>
-        <h2 data-testid="jobTitle">Frontend & WordPress Developer</h2>
-        <p data-testid="shortBio">
-            A passionate frontend developer with expertise in JavaScript, React.js, and WordPress.  
-            I love building interactive and user-friendly web applications.
-        </p>
-        <p data-testid="currentLocation">Ibadan, Nigeria</p>
-        <p data-testid="emailAddress">gracogenolu30@gmail.com</p>
-        <div class="social-links" data-testid="socialLinks">
-            <a href="https://github.com/your-github" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
-        </div>
-        <p data-testid="currentTimeUTC" id="utc-time">Loading...</p>
+        <h3 data-testid="jobTitle">Frontend Developer</h3>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <!-- Right Column -->
+    <div class="profile-right">
+      <p data-testid="shortBio">
+        Passionate frontend developer skilled in React, TypeScript, and WordPress. Dedicated to creating intuitive and dynamic user interfaces.
+      </p>
+      <p data-testid="currentLocation"><strong>Location:</strong> Ibadan, Nigeria</p>
+      <p data-testid="emailAddress"><strong>Email:</strong> gracogenolu30@gmail.com</p>
+      <div class="profile-social" data-testid="socialLinks">
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+      </div>
+      <div class="profile-footer">
+        <p data-testid="currentTimeUTC"><strong>Current UTC Time:</strong> <span id="utc-time"></span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
